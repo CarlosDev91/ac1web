@@ -1,0 +1,15 @@
+<div>
+    <label>Capital Inicial (P):</label>
+    <input type="number" [(ngModel)]="capital">
+
+    <label>Taxa de Juros Anual (%) :</label>
+    <input type="number" [(ngModel)]="taxa">
+
+    <label>Tempo (anos):</label>
+    <input type="number" [(ngModel)]="tempo">
+
+    <button (click)="calcularJuros()">Calcular</button>
+
+    <p *ngIf="juros !== null">Juros Simples: {{ juros?.toFixed(2) }}</p>
+    <p *ngIf="montante !== null">Montante Total: {{ montante?.toFixed(2) }}</p>
+</div>

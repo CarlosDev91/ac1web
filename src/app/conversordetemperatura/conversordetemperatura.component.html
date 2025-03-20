@@ -1,0 +1,9 @@
+<div>
+    <label>Temperatura Celsius:</label>
+    <input type="number" name="celsius" [(ngModel)]="celsius">
+
+    <button (click)="calcular()">Converter</button>
+
+    <p>Temperatura em Fahrenheit: {{fahrenheit}}</p>
+    <p>Temperatura em Kelvin: {{kelvin}}</p>
+</div>

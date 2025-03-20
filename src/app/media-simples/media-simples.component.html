@@ -1,0 +1,19 @@
+<div>
+    <label>ac 1:</label>
+    <input type="number" [(ngModel)]="ac1">
+  
+    <label>ac 2:</label>
+    <input type="number" [(ngModel)]="ac2">
+  
+    <label>ag:</label>
+    <input type="number" [(ngModel)]="ag">
+  
+    <label>af:</label>
+    <input type="number" [(ngModel)]="af">
+  
+    <button (click)="calcularMedia()">Calcular</button>
+  
+    <p>Média: {{ media.toFixed(2) }}</p>
+    <p>Situação: {{ situacao }}</p>
+  </div>
+  

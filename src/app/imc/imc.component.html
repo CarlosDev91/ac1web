@@ -1,0 +1,14 @@
+<div>
+    <label>Peso</label>
+    <input type="number" name="peso" [(ngModel)]="peso">
+
+    <p></p>
+    <label>Altura digite em m</label>
+    <input type="number" name="altura" [(ngModel)]="altura">
+
+    <button (click)="calcular()">Converter</button>
+
+    <p></p>
+    <p>Seu resultado do IMC: {{classificacao}}</p>
+
+</div>
